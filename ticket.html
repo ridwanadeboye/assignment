@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./ticket.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="full-body-container">
+      <div class="side-bar-text-container">
+        <div class="bar-text-container">
+          <a href="#" target="_blank">
+            <span class="material-symbols-outlined">dashboard</span>
+          </a>
+          <a href="#" target="_blank">
+            <p>Dashboard</p>
+          </a>
+        </div>
+        <div class="bar-text-container">
+          <a href="#" target="_blank">
+            <span class="material-symbols-outlined">support_agent</span>
+          </a>
+          <a href="#" target="_blank">
+            <p>Agents</p>
+          </a>
+        </div>
+        <div class="bar-text-container">
+          <a href="#" target="_blank">
+            <span class="material-symbols-outlined">progress_activity</span>
+          </a>
+
+          <a href="#" target="_blank">
+            <p>Activities</p>
+          </a>
+        </div>
+        <div class="bar-text-container">
+          <a href="#" target="_blank">
+            <span class="material-symbols-outlined">save</span>
+          </a>
+          <a href="#" target="_blank">
+            <p>Saved Replies</p>
+          </a>
+        </div>
+        <div class="bar-text-container">
+          <a href="#" target="_blank">
+            <span class="material-symbols-outlined">approval_delegation</span>
+          </a>
+          <a href="#" target="_blank">
+            <p>Workflow</p>
+          </a>
+        </div>
+        <div class="bar-text-container">
+          <a href="#" target="_blank">
+            <span class="material-symbols-outlined">settings</span>
+          </a>
+          <a href="#" target="_blank">
+            <p>Settings</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="right-container">
+        <!--  -->
+        <div class="hello-pro-container">
+          <div class="hello-container">
+            <p>Hello Abisoye,</p>
+          </div>
+          <div class="pro-container">
+            <a href="#" target="_blank">
+              <p>Upgrade to Pro</p>
+            </a>
+          </div>
+        </div>
+        <div class="support-container">
+          <p>Here are the tings happening in your support</p>
+        </div>
+
+        <div class="ticket-reply-active-resolve-container">
+          <div class="open-all-option-container">
+            <div class="open-container">
+              <p>Open tickets</p>
+            </div>
+            <div class="number-container">
+              <p>20</p>
+              <span class="material-symbols-outlined">mobile_ticket</span>
+            </div>
+          </div>
+
+          <div class="open-all-option-container">
+            <div class="open-container">
+              <p>Waiting reply</p>
+            </div>
+            <div class="number-container">
+              <p>24</p>
+              <span class="material-symbols-outlined">pace</span>
+            </div>
+          </div>
+
+          <div class="open-all-option-container">
+            <div class="open-container">
+              <p>Active tickets</p>
+            </div>
+            <div class="number-container">
+              <p>29</p>
+              <span class="material-symbols-outlined">alarm_on</span>
+            </div>
+          </div>
+
+          <div class="open-all-option-container">
+            <div class="open-container">
+              <p>Resolved tickets</p>
+            </div>
+            <div class="number-container">
+              <p>05</p>
+              <span class="material-symbols-outlined">acute</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="status-priority-product-assignee-creation-container">
+          <div class="status-waiting-icon-container">
+            <div class="status-container">
+              <p>Status</p>
+            </div>
+            <div class="waiting-icon-container">
+              <select name="Waiting" id="Waiting">
+                <option value="Waiting">Waiting</option>
+                <option value="stop">Stop</option>
+                <option value="moving">Moving</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="status-waiting-icon-container">
+            <div class="status-container">
+              <p>Priority</p>
+            </div>
+            <div class="waiting-icon-container">
+              <select name="priority" id="priority">
+                <option value="critical">Critical</option>
+                <option value="fast">Faster</option>
+                <option value="Faster">Faster</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="status-waiting-icon-container">
+            <div class="status-container">
+              <p>Product</p>
+            </div>
+            <div class="waiting-icon-container">
+              <select name="cloth" id="cloth">
+                <option value="winter">Winter Jacket</option>
+                <option value="summer">Summer Jacket</option>
+                <option value="Rain">Rainy Jacket</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="status-waiting-icon-container">
+            <div class="status-container">
+              <p>Assignee</p>
+            </div>
+            <div class="image-icon-container">
+              <img src="./image/pic.jpg" alt="finest" />
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+          </div>
+
+          <div class="status-waiting-icon-container">
+            <div class="status-container">
+              <p>Creation Date</p>
+            </div>
+            <div class="waiting-icon-container">
+              <select name="date" id="date">
+                <option value="Oct">1st Oct 2018</option>
+                <option value="Jan">1st Jan 2019</option>
+                <option value="Feb">1st Oct 2019</option>
+                <option value="Mar">1st Mar 2019</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="button-container">
+            <button type="submit">Reset Filter</button>
+          </div>
+        </div>
+
+        <div
+          class="checkbox-title-status-priority-assigness-updated-created-container"
+        >
+          <div class="checkbox-title-container">
+            <input type="checkbox" id="title" value="title" name="ticket" />
+            <label for="title">Title</label>
+          </div>
+
+          <div class="status-priority-assigness-updated-created-container">
+            <div class="all-container">
+              <p>Status</p>
+            </div>
+            <div class="all-container">
+              <p>Priority</p>
+            </div>
+            <div class="all-container">
+              <p>Assignee</p>
+            </div>
+            <div class="all-container">
+              <p>Updated</p>
+            </div>
+            <div class="all-container">
+              <p>Created at</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-time-ago-container">
+          <div class="product-cntainer">
+            <div class="checkbox-container">
+              <input
+                type="checkbox"
+                id="product"
+                value="product"
+                name="product"
+              />
+            </div>
+            <div class="images-container">
+              <img src="./image/pic3.jpg" alt="giii" />
+            </div>
+            <div class="products-received-container">
+              <div class="received-container">
+                <p>Product not received <span class="number">#123</span></p>
+              </div>
+              <div class="order-container">
+                <p>Hello, I ordered but not receive....</p>
+              </div>
+              <div class="anchored-container">
+                <div class="an-container">
+                  <p>Abisoye Mill</p>
+                </div>
+                <div class="waiting-icon-container">
+                  <select name="cloth" id="cloth">
+                    <option value="winter">Winter Jacket</option>
+                    <option value="summer">Summer Jacket</option>
+                    <option value="Rain">Rainy Jacket</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="awaiting-iconss-container">
+            <div class="awaiting-container">
+              <span class="material-symbols-outlined">planner_review</span>
+              <p>Awaiting</p>
+            </div>
+            <div class="iconss-container">
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+          </div>
+
+          <div class="yellow-word-container">
+            <div class="yellow-container">
+              <span class="material-symbols-outlined">draft</span>
+              <p>Medium</p>
+            </div>
+            <div class="iconss-container">
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+          </div>
+
+          <div class="abisoye-image-container">
+            <div class="abisoyes-container">
+              <img src="./image/pic.jpg" alt="ggg" />
+              <p>Abisoye</p>
+            </div>
+
+            <div class="iconss-container">
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+          </div>
+
+          <div class="clock-container">
+            <span class="material-symbols-outlined">pace</span>
+            <p>2h ago</p>
+          </div>
+          <div class="clock-container">
+            <span class="material-symbols-outlined">schedule</span>
+            <p>3 days ago</p>
+          </div>
+        </div>
+
+        <div class="product-time-ago-container">
+          <div class="product-cntainer">
+            <div class="checkbox-container">
+              <input
+                type="checkbox"
+                id="product Faulty"
+                value="product Faulty"
+                name="product Faulty"
+              />
+            </div>
+            <div class="images-container">
+              <img src="./image/pic2.jpg" alt="giii" />
+            </div>
+            <div class="products-received-container">
+              <div class="received-container">
+                <p>Faulty product<span class="number">#231</span></p>
+              </div>
+              <div class="order-container">
+                <p>Hello, I ordered but not receive....</p>
+              </div>
+              <div class="anchored-container">
+                <div class="an-container">
+                  <p>Thomas jos</p>
+                </div>
+                <div class="waiting-icon-container">
+                  <select name="cloth" id="cloth">
+                    <option value="shi">Ski shoe</option>
+                    <option value="summer">Summer Jacket</option>
+                    <option value="Rain">Rainy Jacket</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="awaiting-iconss-container">
+            <div class="awaiting-container">
+              <span class="material-symbols-outlined">planner_review</span>
+              <p>Closed</p>
+            </div>
+            <div class="iconss-container">
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+          </div>
+
+          <div class="yellow-word-container">
+            <div class="green-container">
+              <span class="material-symbols-outlined">draft</span>
+              <p>Low</p>
+            </div>
+            <div class="iconss-container">
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+          </div>
+
+          <div class="abisoye-image-container">
+            <div class="abisoyes-container">
+              <img src="./image/pic.jpg" alt="ggg" />
+              <p>David</p>
+            </div>
+
+            <div class="iconss-container">
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+          </div>
+
+          <div class="clock-container">
+            <span class="material-symbols-outlined">pace</span>
+            <p>3h ago</p>
+          </div>
+          <div class="clock-container">
+            <span class="material-symbols-outlined">schedule</span>
+            <p>1st Jan 22</p>
+          </div>
+        </div>
+
+        <div class="product-time-ago-container">
+          <div class="product-cntainer">
+            <div class="checkbox-container">
+              <input
+                type="checkbox"
+                id="emergency"
+                value="emergency"
+                name="emergency"
+              />
+            </div>
+            <div class="images-container">
+              <img src="./image/pic.jpg" alt="giii" />
+            </div>
+            <div class="products-received-container">
+              <div class="received-container">
+                <p>Hey, I need emergency<span class="number">#211</span></p>
+              </div>
+              <div class="order-container">
+                <p>Hello, I ordered but not receive....</p>
+              </div>
+              <div class="anchored-container">
+                <div class="an-container">
+                  <p>Muller James</p>
+                </div>
+                <div class="waiting-icon-container">
+                  <select name="cloth" id="cloth">
+                    <option value="warm">Warm glove</option>
+                    <option value="summer">Summer Jacket</option>
+                    <option value="Rain">Rainy Jacket</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="awaiting-iconss-container">
+            <div class="awaiting-container">
+              <span class="material-symbols-outlined">planner_review</span>
+              <p>InProgress</p>
+            </div>
+            <div class="iconss-container">
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+          </div>
+
+          <div class="yellow-word-container">
+            <div class="red-container">
+              <span class="material-symbols-outlined">draft</span>
+              <p>Low</p>
+            </div>
+            <div class="iconss-container">
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+          </div>
+
+          <div class="abisoye-image-container">
+            <div class="abisoyes-container">
+              <img src="./image/pic2.jpg" alt="ggg" />
+              <p>Tom</p>
+            </div>
+
+            <div class="iconss-container">
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+          </div>
+
+          <div class="clock-container">
+            <span class="material-symbols-outlined">pace</span>
+            <p>2d ago</p>
+          </div>
+          <div class="clock-container">
+            <span class="material-symbols-outlined">schedule</span>
+            <p>2nd Feb 24</p>
+          </div>
+        </div>
+
+        <!--  -->
+      </div>
+    </section>
+  </body>
+</html>
