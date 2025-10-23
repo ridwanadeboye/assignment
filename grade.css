@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 :root {
   /* TYPOGRAPH */
@@ -47,6 +49,18 @@
   --spacemedium: 1.5rem;
   --spacemedium-x: 1.8rem;
   --spacelarge: 3rem;
+}
+[data-prefer="dark"] {
+  --shadowcolor: rgba(0, 0, 0, 0.6);
+  --fadedcolor: #e9e4e4;
+  --fadedcolors: #504e4e;
+  --blackcolor: #000;
+  --bluecolor: rgb(0, 0, 230);
+  --background-color: #f4f5f3;
+  --bluecolors: hsl(276, 86%, 51%);
+  --darkcolor-mode: #fff;
+  --yellowcolor: hsl(61, 91%, 50%);
+  --redcolor: rgb(220, 0, 0);
 }
 
 .full-body-container {
@@ -570,4 +584,22 @@ a {
   justify-content: space-between;
   align-items: center;
   column-gap: var(--spacemedium);
+}
+@media screen and (max-width: 1140px) {
+}
+@media screen and (max-width: 480px) {
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --shadowcolor: rgba(0, 0, 0, 0.6);
+    --fadedcolor: #e9e4e4;
+    --fadedcolors: #504e4e;
+    --blackcolor: #000;
+    --bluecolor: rgb(0, 0, 230);
+    --background-color: #f4f5f3;
+    --bluecolors: hsl(276, 86%, 51%);
+    --darkcolor-mode: #fff;
+    --yellowcolor: hsl(61, 91%, 50%);
+    --redcolor: rgb(220, 0, 0);
+  }
 }
