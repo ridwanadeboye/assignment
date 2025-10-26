@@ -50,6 +50,18 @@
   --spacemedium-x: 1.8rem;
   --spacelarge: 3rem;
 }
+[data-prefer="dark"] {
+  --shadowcolor: rgba(0, 0, 0, 0.6);
+  --fadedcolor: #e9e4e4;
+  --fadedcolors: #504e4e;
+  --blackcolor: #000;
+  --bluecolor: rgb(0, 0, 230);
+  --background-color: #f4f5f3;
+  --bluecolors: hsl(276, 86%, 51%);
+  --darkcolor-mode: #fff;
+  --yellowcolor: hsl(61, 91%, 50%);
+  --redcolor: rgb(220, 0, 0);
+}
 a {
   text-decoration: none;
   color: var(--blackcolors, #000);
@@ -1103,5 +1115,19 @@ a {
     height: 25px;
     border-radius: 100rem;
     object-fit: cover;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --shadowcolor: rgba(0, 0, 0, 0.6);
+    --fadedcolor: #e9e4e4;
+    --fadedcolors: #504e4e;
+    --blackcolor: #000;
+    --bluecolor: rgb(0, 0, 230);
+    --background-color: #f4f5f3;
+    --bluecolors: hsl(276, 86%, 51%);
+    --darkcolor-mode: #fff;
+    --yellowcolor: hsl(61, 91%, 50%);
+    --redcolor: rgb(220, 0, 0);
   }
 }
