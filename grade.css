@@ -80,7 +80,8 @@ a {
   color: #000;
 }
 .head-sidebar-container {
-  width: 20%;
+  max-width: 20%;
+  min-width: 200px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -466,14 +467,14 @@ a {
   justify-content: space-between;
   align-items: center;
   column-gap: var(--spacesmall);
-  padding: var(--spacesmalls, 0.3rem) var(--spacesmall);
+  padding: var(--spacesmalls, 0.2rem) var(--spacesmall);
   box-shadow: var(--variableShadow);
   border-radius: var(--spacesmall);
 }
 .filter-container p {
   width: fit-content;
   height: auto;
-  font-size: var(--fontSize-small);
+  font-size: var(--fontSize-smalls, 0.8rem);
   font-weight: var(--fontweight-Normal);
 }
 .edit-file-delete-others-container {
@@ -585,9 +586,1113 @@ a {
   align-items: center;
   column-gap: var(--spacemedium);
 }
-@media screen and (max-width: 1140px) {
-}
 @media screen and (max-width: 480px) {
+  .full-body-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    padding: var(--spacesmall) var(--spacesmall);
+    column-gap: var(--spacemedium);
+    flex-wrap: wrap;
+  }
+  a {
+    width: fit-content;
+    height: auto;
+    text-decoration: none;
+    color: #000;
+  }
+  .head-sidebar-container {
+    max-width: 20%;
+    min-width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--spacesmall-x);
+    background-color: var(--darkcolor-mode);
+    box-shadow: var(--variableShadow);
+    padding: var(--spacesmall) var(--spacesmall);
+    flex-wrap: wrap;
+  }
+  .head-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: var(--spacesmall-x);
+  }
+  .head-container span {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fonticon-large);
+  }
+  .head-container p {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-small);
+    font-weight: var(--fontweight-Normal);
+  }
+  .siderbar-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--spacemedium);
+    flex-wrap: wrap;
+  }
+  .home-student-classes-groups-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--spacesmall);
+    flex-wrap: wrap;
+  }
+  .administration-subject-assignment-library-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--spacesmall);
+    flex-wrap: wrap;
+  }
+  .main-menu-container h4,
+  .administration-container h4,
+  .teach-container h4 {
+    width: fit-content;
+    height: auto;
+    --variableClamp: clamp(1rem, 2vw + 1rem, 1.2rem);
+    font-size: var(--variableClamp);
+    font-weight: var(--fontweight-bold);
+  }
+  .menus-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: var(--spacesmall-x);
+    flex-wrap: wrap;
+  }
+  .menus-container p {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-small);
+    font-weight: var(--fontweight-Normal);
+  }
+  .subject-assignment-library-container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--spacesmall);
+    flex-wrap: wrap;
+  }
+  .menus-arrow-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .two-container p {
+    width: fit-content;
+    height: auto;
+    padding: var(--spacesmalls, 0.2rem) var(--spacesmall);
+    color: var(--darkcolor-mode);
+    background-color: var(--yellowcolor);
+    border-radius: 100rem;
+  }
+  .teachers-images-name-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--spacesmall);
+    flex-wrap: wrap;
+  }
+  .all-images-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--spacesmall-x);
+    padding-bottom: 20rem;
+    flex-wrap: wrap;
+  }
+  .images-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: var(--spacesmall-x);
+    flex-wrap: wrap;
+  }
+  .images-container img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100rem;
+    object-fit: cover;
+  }
+  .ade {
+    width: fit-content;
+    height: auto;
+    padding: var(--fontSize-smalls, 0.1rem) var(--spacesmalls, 0.2rem);
+    border: 0.02rem solid var(--bluecolors);
+    color: var(--bluecolors);
+    border-radius: var(--spacesmall);
+  }
+  .right-container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--spacemedium-x);
+    flex-wrap: wrap;
+  }
+  .head-bell-image-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .search-input-container {
+    width: fit-content;
+    height: auto;
+    position: relative;
+  }
+  .search-input-container input {
+    width: 100%;
+    height: auto;
+    padding: var(--spacesmall) var(--spacelarge);
+    border-radius: var(--spacesmall-x);
+    border: 0.01rem solid #000;
+    outline: none;
+  }
+  .search-input-container span {
+    width: fit-content;
+    height: auto;
+    position: absolute;
+    top: 0.3rem;
+    right: 14.5rem;
+  }
+  .setting-ade-image-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacelarge);
+    flex-wrap: wrap;
+  }
+  .setting-bell-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall-x);
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .setting-bell-container p {
+    width: fit-content;
+    height: auto;
+    padding: var(--spacesmalls, 0.2rem) var(--spacesmalls, 0.4rem);
+    background-color: var(--redcolor);
+    border-radius: 100rem;
+    font-size: var(--fontSize-smalls, 0.6rem);
+    color: var(--darkcolor-mode);
+    position: absolute;
+    top: -0.9rem;
+    left: 3rem;
+  }
+  .ade-image-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall-x);
+    flex-wrap: wrap;
+  }
+  .ade-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall);
+    flex-wrap: wrap;
+  }
+  .ade-container p {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-small);
+    font-weight: var(--fontweight-Normal);
+  }
+  .adex {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-smalls, 0.9rem);
+    font-weight: var(--fontweight-Normal);
+    color: var(--fadedcolors);
+  }
+  .student-export-add-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+
+  .student-total-export-add-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .student-total-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  .student-container {
+    width: fit-content;
+    height: auto;
+  }
+  .student-container h1 {
+    width: 100%;
+    height: auto;
+    font-size: var(--variableClamp);
+    font-weight: var(--fontweight-bold);
+  }
+  .total-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall);
+    flex-wrap: wrap;
+  }
+  .total-container p {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-smalls, 0.9rem);
+    font-weight: var(--fontweight-Normal);
+    color: var(--fadedcolors);
+  }
+  .abisoye {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fonticon-small, 16px);
+    color: var(--fadedcolors);
+  }
+  .thousand {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-small);
+    font-weight: var(--fontweight-Normal);
+    color: var(--fadedcolorss, #000);
+  }
+  .export-add-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall-x);
+    flex-wrap: wrap;
+  }
+  .export-container,
+  .export-containers {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall-x);
+    padding: var(--spacesmall) var(--spacesmall-x);
+    box-shadow: var(--variableShadow);
+    background-color: var(--darkcolor-mode) blanchedalmond;
+  }
+  .export-container p {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-small);
+    font-weight: var(--fontweight-Normal);
+  }
+  .export-containers {
+    width: fit-content;
+    height: auto;
+    background-color: var(--bluecolor);
+    color: var(--darkcolor-mode);
+  }
+  .export-containers p {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-small);
+    font-weight: var(--fontweight-Normal);
+    color: var(--darkcolor-mode);
+  }
+  .classes-age-average-filter-edit-file-container {
+    width: 65%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacemedium);
+    flex-wrap: wrap;
+  }
+  .classes-age-average-filter-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall-x);
+    flex-wrap: wrap;
+  }
+  .caaf-container select {
+    width: fit-content;
+    height: auto;
+    padding: var(--spacesmall) var(--spacesmall);
+    box-shadow: var(--variableShadow);
+    border-radius: var(--spacesmall);
+  }
+  .filter-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall);
+    padding: var(--spacesmalls, 0.2rem) var(--spacesmall);
+    box-shadow: var(--variableShadow);
+    border-radius: var(--spacesmall);
+  }
+  .filter-container p {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-smalls, 0.8rem);
+    font-weight: var(--fontweight-Normal);
+  }
+  .edit-file-delete-others-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall-x);
+  }
+  .efdo-container {
+    width: fit-content;
+    height: auto;
+  }
+  .efdo-container span {
+    width: fit-content;
+    height: auto;
+    padding: var(--spacesmalls, 0.3rem) var(--spacesmalls, 0.4rem);
+    box-shadow: var(--variableShadow);
+    border-radius: var(--spacesmall);
+  }
+  .checkbox-id-student-gender-age-class-average-missing-action-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  .joint-names-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: var(--spacelarge);
+  }
+
+  .checkboxs-container,
+  .number-cisgacama-container,
+  .gender-cisgacama-container,
+  .age-cisgacama-container,
+  .class-cisgacama-container,
+  .ave-cisgacama-container,
+  .mising-cisgacama-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: var(--spacemedium);
+    flex-wrap: wrap;
+  }
+  .images-cisgacama-container,
+  .action-cisgacama-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: var(--spacesmall-x);
+    flex-wrap: wrap;
+  }
+  .cisgacama-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall);
+    flex-wrap: wrap;
+  }
+  .cisgacama-container span {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fonticon-smalls, 16px);
+    color: var(--fadedcolors);
+  }
+  .cisgacama-container p {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-smalls, 0.9rem);
+  }
+
+  .images-set-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: cover;
+    column-gap: var(--spacesmall-x);
+  }
+  .images-set-container img {
+    width: 26px;
+    height: 26px;
+    border-radius: 100rem;
+    object-fit: cover;
+  }
+  .email-phone-dash-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacemedium);
+  }
+}
+@media screen and (max-width: 1140px) {
+  .full-body-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    padding: var(--spacesmall) var(--spacesmall);
+    column-gap: var(--spacemedium);
+    flex-wrap: wrap;
+  }
+  a {
+    width: fit-content;
+    height: auto;
+    text-decoration: none;
+    color: #000;
+  }
+  .head-sidebar-container {
+    max-width: 20%;
+    min-width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--spacesmall-x);
+    background-color: var(--darkcolor-mode);
+    box-shadow: var(--variableShadow);
+    padding: var(--spacesmall) var(--spacesmall);
+    flex-wrap: wrap;
+  }
+  .head-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: var(--spacesmall-x);
+  }
+  .head-container span {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fonticon-large);
+  }
+  .head-container p {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-small);
+    font-weight: var(--fontweight-Normal);
+  }
+  .siderbar-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--spacemedium);
+    flex-wrap: wrap;
+  }
+  .home-student-classes-groups-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--spacesmall);
+    flex-wrap: wrap;
+  }
+  .administration-subject-assignment-library-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--spacesmall);
+    flex-wrap: wrap;
+  }
+  .main-menu-container h4,
+  .administration-container h4,
+  .teach-container h4 {
+    width: fit-content;
+    height: auto;
+    --variableClamp: clamp(1rem, 2vw + 1rem, 1.2rem);
+    font-size: var(--variableClamp);
+    font-weight: var(--fontweight-bold);
+  }
+  .menus-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: var(--spacesmall-x);
+    flex-wrap: wrap;
+  }
+  .menus-container p {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-small);
+    font-weight: var(--fontweight-Normal);
+  }
+  .subject-assignment-library-container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--spacesmall);
+    flex-wrap: wrap;
+  }
+  .menus-arrow-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .two-container p {
+    width: fit-content;
+    height: auto;
+    padding: var(--spacesmalls, 0.2rem) var(--spacesmall);
+    color: var(--darkcolor-mode);
+    background-color: var(--yellowcolor);
+    border-radius: 100rem;
+  }
+  .teachers-images-name-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--spacesmall);
+    flex-wrap: wrap;
+  }
+  .all-images-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--spacesmall-x);
+    padding-bottom: 20rem;
+    flex-wrap: wrap;
+  }
+  .images-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: var(--spacesmall-x);
+    flex-wrap: wrap;
+  }
+  .images-container img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100rem;
+    object-fit: cover;
+  }
+  .ade {
+    width: fit-content;
+    height: auto;
+    padding: var(--fontSize-smalls, 0.1rem) var(--spacesmalls, 0.2rem);
+    border: 0.02rem solid var(--bluecolors);
+    color: var(--bluecolors);
+    border-radius: var(--spacesmall);
+  }
+  .right-container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--spacemedium-x);
+    flex-wrap: wrap;
+  }
+  .head-bell-image-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .search-input-container {
+    width: fit-content;
+    height: auto;
+    position: relative;
+  }
+  .search-input-container input {
+    width: 100%;
+    height: auto;
+    padding: var(--spacesmall) var(--spacelarge);
+    border-radius: var(--spacesmall-x);
+    border: 0.01rem solid #000;
+    outline: none;
+  }
+  .search-input-container span {
+    width: fit-content;
+    height: auto;
+    position: absolute;
+    top: 0.3rem;
+    right: 14.5rem;
+  }
+  .setting-ade-image-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacelarge);
+    flex-wrap: wrap;
+  }
+  .setting-bell-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall-x);
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .setting-bell-container p {
+    width: fit-content;
+    height: auto;
+    padding: var(--spacesmalls, 0.2rem) var(--spacesmalls, 0.4rem);
+    background-color: var(--redcolor);
+    border-radius: 100rem;
+    font-size: var(--fontSize-smalls, 0.6rem);
+    color: var(--darkcolor-mode);
+    position: absolute;
+    top: -0.9rem;
+    left: 3rem;
+  }
+  .ade-image-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall-x);
+    flex-wrap: wrap;
+  }
+  .ade-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall);
+    flex-wrap: wrap;
+  }
+  .ade-container p {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-small);
+    font-weight: var(--fontweight-Normal);
+  }
+  .adex {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-smalls, 0.9rem);
+    font-weight: var(--fontweight-Normal);
+    color: var(--fadedcolors);
+  }
+  .student-export-add-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+
+  .student-total-export-add-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .student-total-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  .student-container {
+    width: fit-content;
+    height: auto;
+  }
+  .student-container h1 {
+    width: 100%;
+    height: auto;
+    font-size: var(--variableClamp);
+    font-weight: var(--fontweight-bold);
+  }
+  .total-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall);
+    flex-wrap: wrap;
+  }
+  .total-container p {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-smalls, 0.9rem);
+    font-weight: var(--fontweight-Normal);
+    color: var(--fadedcolors);
+  }
+  .abisoye {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fonticon-small, 16px);
+    color: var(--fadedcolors);
+  }
+  .thousand {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-small);
+    font-weight: var(--fontweight-Normal);
+    color: var(--fadedcolorss, #000);
+  }
+  .export-add-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall-x);
+    flex-wrap: wrap;
+  }
+  .export-container,
+  .export-containers {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall-x);
+    padding: var(--spacesmall) var(--spacesmall-x);
+    box-shadow: var(--variableShadow);
+    background-color: var(--darkcolor-mode) blanchedalmond;
+  }
+  .export-container p {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-small);
+    font-weight: var(--fontweight-Normal);
+  }
+  .export-containers {
+    width: fit-content;
+    height: auto;
+    background-color: var(--bluecolor);
+    color: var(--darkcolor-mode);
+  }
+  .export-containers p {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-small);
+    font-weight: var(--fontweight-Normal);
+    color: var(--darkcolor-mode);
+  }
+  .classes-age-average-filter-edit-file-container {
+    width: 65%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacemedium);
+    flex-wrap: wrap;
+  }
+  .classes-age-average-filter-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall-x);
+    flex-wrap: wrap;
+  }
+  .caaf-container select {
+    width: fit-content;
+    height: auto;
+    padding: var(--spacesmall) var(--spacesmall);
+    box-shadow: var(--variableShadow);
+    border-radius: var(--spacesmall);
+  }
+  .filter-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall);
+    padding: var(--spacesmalls, 0.2rem) var(--spacesmall);
+    box-shadow: var(--variableShadow);
+    border-radius: var(--spacesmall);
+  }
+  .filter-container p {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-smalls, 0.8rem);
+    font-weight: var(--fontweight-Normal);
+  }
+  .edit-file-delete-others-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall-x);
+  }
+  .efdo-container {
+    width: fit-content;
+    height: auto;
+  }
+  .efdo-container span {
+    width: fit-content;
+    height: auto;
+    padding: var(--spacesmalls, 0.3rem) var(--spacesmalls, 0.4rem);
+    box-shadow: var(--variableShadow);
+    border-radius: var(--spacesmall);
+  }
+  .checkbox-id-student-gender-age-class-average-missing-action-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  .joint-names-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: var(--spacelarge);
+  }
+
+  .checkboxs-container,
+  .number-cisgacama-container,
+  .gender-cisgacama-container,
+  .age-cisgacama-container,
+  .class-cisgacama-container,
+  .ave-cisgacama-container,
+  .mising-cisgacama-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: var(--spacemedium);
+    flex-wrap: wrap;
+  }
+  .images-cisgacama-container,
+  .action-cisgacama-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: var(--spacesmall-x);
+    flex-wrap: wrap;
+  }
+  .cisgacama-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacesmall);
+    flex-wrap: wrap;
+  }
+  .cisgacama-container span {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fonticon-smalls, 16px);
+    color: var(--fadedcolors);
+  }
+  .cisgacama-container p {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fontSize-smalls, 0.9rem);
+  }
+
+  .images-set-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: cover;
+    column-gap: var(--spacesmall-x);
+  }
+  .images-set-container img {
+    width: 26px;
+    height: 26px;
+    border-radius: 100rem;
+    object-fit: cover;
+  }
+  .email-phone-dash-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacemedium);
+  }
 }
 @media (prefers-color-scheme: dark) {
   :root {

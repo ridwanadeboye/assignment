@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 :root {
   /* CLAMP VARIABLE */
@@ -296,6 +298,254 @@
   outline: none;
   border-radius: 2rem;
   cursor: pointer;
+}
+@media screen and(max-width:1140px) {
+  .main-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    padding: 2rem 5rem;
+  }
+  .first-circle-container {
+    width: fit-content;
+    height: auto;
+    background-color: var(--firstCircle);
+    --spaceLarge-XL: 8rem;
+    padding: var(--spaceLarge-XL) var(--spaceLarge-XL);
+    position: absolute;
+    bottom: 0;
+    left: -2rem;
+    border-radius: 100rem;
+  }
+  .second-circle-container {
+    width: fit-content;
+    height: auto;
+    background-color: var(--secoondCircle);
+    padding: var(--spaceLarge-XL) var(--spaceLarge-XL);
+    position: absolute;
+    right: 2rem;
+    border-radius: 100rem;
+  }
+  .two-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--whiteColor);
+    box-shadow: var(--shadowVariable);
+    border-radius: 1.2rem;
+  }
+  .left-container {
+    width: 35%;
+    height: auto;
+    background-color: var(--greenColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: var(--spaceSmall-X) 0 13rem 0;
+    row-gap: var(--spaceLarge-X);
+    color: var(--whiteColor);
+  }
+  .icon-text-container {
+    width: 100%;
+    height: auto;
+    background-color: var(--greenColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: var(--spaceSmall);
+    padding: 0 0 6rem 0;
+  }
+  .icon-container,
+  .text-container,
+  .welcome-container,
+  .page-container,
+  .sign-container {
+    width: fit-content;
+    height: auto;
+  }
+  .icon-container span {
+    width: 100%;
+    height: auto;
+    font-size: var(--fontIcons-medium);
+  }
+  .text-container p {
+    width: 100%;
+    height: auto;
+    --fontSize-small: 0.9rem;
+    font-size: var(--fontSize-small);
+    font-weight: var(--fontWeight-small);
+  }
+  .welcome-container h1 {
+    width: fit-content;
+    height: auto;
+    font-size: var(--clampVariable);
+    font-weight: var(--fontWeight-large);
+  }
+  .page-container p {
+    width: 100%;
+    height: auto;
+    --fontSize-small: 0.9rem;
+    font-size: var(--fontSize-small);
+    font-weight: var(--fontWeight-small);
+    text-align: center;
+    line-height: var(--spaceSmall-X);
+  }
+  .sign-container p {
+    width: fit-content;
+    height: auto;
+    padding: var(--spaceSmall) var(--spaceLarge-XL);
+    border: 0.01rem solid #fff;
+    border-radius: var(--spaceSmall-X);
+    --fontSize-small: 1.3rem;
+    font-size: var(--fontSize-small);
+    font-weight: var(--fontWeight-small);
+    text-transform: uppercase;
+  }
+  .sign-container a {
+    width: fit-content;
+    height: auto;
+    text-decoration: none;
+    color: #fff;
+  }
+  .right-container {
+    width: 65%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 2rem;
+  }
+  .create-container,
+  .app-container,
+  .apps-containers,
+  .apps-container,
+  .pages-container {
+    width: fit-content;
+    height: auto;
+  }
+  .create-container h1 {
+    width: fit-content;
+    height: auto;
+    --greenColor: hsl(145, 85%, 34%);
+    color: var(--greenColor);
+    font-size: var(--clampVariable);
+    font-weight: var(--fontWeight-large);
+  }
+  .icons-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spaceSmall-X);
+  }
+  .app-container a,
+  .apps-container a,
+  .apps-containers a {
+    width: fit-content;
+    height: auto;
+    text-decoration: none;
+    color: #000;
+  }
+  .apps-container i {
+    width: fit-content;
+    height: auto;
+    padding: 1rem var(--spaceSmall-X);
+    background-color: #fff;
+    box-shadow: var(--shadowVariable);
+    border-radius: 100rem;
+    border: 0.01rem solid #888282;
+    --fontIcons-small: 12px;
+    font-size: var(--fontIcons-small);
+  }
+  .app-container i {
+    width: fit-content;
+    height: auto;
+    padding: 1rem 0.9rem;
+    background-color: #fff;
+    border: 0.01rem solid #888282;
+    box-shadow: var(--shadowVariable);
+    border-radius: 100rem;
+    --fontIcons-small: 12px;
+    font-size: var(--fontIcons-small);
+  }
+  .apps-containers i {
+    width: fit-content;
+    height: auto;
+    padding: 1rem 1rem;
+    background-color: #fff;
+    border: 0.01rem solid #888282;
+    box-shadow: var(--shadowVariable);
+    border-radius: 100rem;
+    --fontIcons-small: 12px;
+    font-size: var(--fontIcons-small);
+  }
+  .pages-container p {
+    width: fit-content;
+    height: auto;
+    --whiteColor: hsl(0, 4%, 49%);
+    color: var(--whiteColor);
+    --fontSize-small: 0.9rem;
+    font-size: var(--fontSize-small);
+    font-weight: var(--fontWeight-small);
+  }
+  .name-email-password-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 0.6rem;
+    position: relative;
+  }
+  .login-container,
+  .button-container {
+    width: fit-content;
+    height: auto;
+  }
+  .login-container input {
+    width: 100%;
+    height: auto;
+    --spaceSmall: 0.7rem;
+    padding: var(--spaceSmall) var(--spaceLarge-XL);
+    border: none;
+    outline: none;
+    background-color: #f0ecec;
+  }
+  .login-container i {
+    width: fit-content;
+    height: auto;
+    position: relative;
+    bottom: 1.8rem;
+    left: 1rem;
+  }
+  .button-container button {
+    width: 100%;
+    height: auto;
+    --spaceSmall: 0.7rem;
+    padding: var(--spaceSmall) var(--spaceLarge-XL);
+    font-size: var(--fontSize-small);
+    text-transform: uppercase;
+    --greenColor: hsl(145, 85%, 34%);
+    background-color: var(--greenColor);
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 480px) {
