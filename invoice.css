@@ -81,6 +81,10 @@
   align-items: start;
   row-gap: var(--spaceMedium);
   padding: var(--spaceSmaller) var(--spaceSmall);
+  background: url(./image/ex1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .logo-container {
   width: 100%;
@@ -90,6 +94,7 @@
   justify-content: start;
   align-items: center;
   column-gap: var(--spaceSmaller);
+  margin-bottom: var(--spacelarge);
 }
 .logo-container span {
   width: fit-content;
@@ -106,6 +111,7 @@
   width: fit-content;
   height: auto;
   position: relative;
+  margin-bottom: var(--spacelarge);
 }
 .input-container input {
   width: 100%;
@@ -130,7 +136,15 @@ input::placeholder {
   left: 0.1rem;
   color: #a8a5a5;
 }
-.menu-dashboard-others-container,
+.menu-dashboard-others-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: var(--spacelarge);
+}
 .people-client-others-container {
   width: 100%;
   height: auto;
@@ -139,6 +153,7 @@ input::placeholder {
   justify-content: center;
   align-items: start;
   row-gap: var(--spacelarge);
+  margin-bottom: 7rem;
 }
 .menu-container {
   width: fit-content;
@@ -481,8 +496,10 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    background: none;
     row-gap: var(--spaceMedium);
     padding: var(--spaceSmaller) var(--spaceSmall);
+    box-shadow: var(--shadowBox);
     flex-wrap: wrap;
   }
   .logo-container {
@@ -905,6 +922,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    background: none;
+    box-shadow: var(--shadowBox);
     row-gap: var(--spaceMedium);
     padding: var(--spaceSmaller) var(--spaceSmall);
     flex-wrap: wrap;
